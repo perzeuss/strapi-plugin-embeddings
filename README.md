@@ -1,27 +1,41 @@
-### Strapi Embeddings Plugin 🚀
+# Strapi Embeddings Plugin 🚀
 
 [![GitHub](https://img.shields.io/github/license/perzeuss/strapi-plugin-embeddings)](https://github.com/perzeuss/strapi-plugin-embeddings/blob/main/LICENSE)  [![GitHub stars](https://img.shields.io/github/stars/perzeuss/strapi-plugin-embeddings)](https://github.com/perzeuss/strapi-plugin-embeddings/stargazers)
 
 Welcome to the Strapi Embeddings Plugin! ✨ Enhance your Strapi CMS with the power of embeddings for an exceptional content management experience. This plugin introduces new content types that can be easily configured and managed via the Strapi Content Manager, allowing you to take control of your collections, documents, and embeddings directly within Strapi.
 
-#### Features ✨
+## Project Status: Early Development 🚧
 
-- 🔧 Easy Configuration: Configure and manage multiple chroma instances effortlessly using the intuitive Strapi Content Manager.
-- 📚 Collection Management: List, create, update, and delete chroma collections to organize your data effectively. 
-- ✏️ Document Management: List, create, update, and delete documents within chroma collections.
-- 🌐 Multilingual UI: Enjoy a seamless multilingual experience with support for multiple languages in the user interface.
-- 🔩 Schema Customization: Tailor object metadata schemas according to your specific requirements. Define custom fields and their data types to store the information that matters to you.
-- 📋 Typescript Types Generation: Generate Typescript types for the chroma collections, enabling seamless integration and type safety in your code.
-- ⬆️ Document Import: Easily import documents into strapi and chroma. The plugin automatically splits the documents and generates embeddings for each section, making it easy to create embeddings without a single line of code.
-- 💡 Prompt-based Embeddings: Generate powerful embeddings for your Strapi documents using prompt templates. Shape the way your content is understood and processed by AI models.
-- 🔄 Automatic Embedding Synchronization: The Strapi Embeddings Plugin automatically synchronizes the embeddings when data changes in Strapi. This ensures that your embeddings stay up to date and accurately reflect any modifications or updates made to your content
-- 🔍 Semantic Search: Leverage the power of semantic search to retrieve documents that closely match the meaning and context of your query, enabling you to find the most relevant information quickly.
-- 🚀 Simultaneous Queries across Instances & Collections: Perform queries across multiple Chroma instances and collections simultaneously, unlocking the potential of your data.
-- 🧩 MaxDistance Queries: Fine-tune your queries and retrieve only the documents that semantically match your query, even across multiple Chroma instances and collections.
-- 🔒 Secure Authentication: Utilize Strapi's user authentication and permission management system to control access to your content and protect sensitive information.
-- 📦 API Integration: Integrate the plugin with other systems and platforms using the extensive API capabilities provided by Strapi. Seamlessly connect your content with your preferred tools and services.
+Please note that this project is currently in the early development stage. It is an exciting work in progress, but it may contain incomplete features, bugs, or other issues. We encourage you to explore, experiment, and provide feedback to help shape the final product. Your contributions and suggestions are highly welcome!
 
-#### Development 🛠️
+As we continue to iterate and improve, we appreciate your patience and understanding. Stay tuned for updates and follow the roadmap as we progress towards a stable and feature-rich release.
+
+Thank you for your interest in this project, and we look forward to your involvement in making it even better! 🎉🌟
+
+## Features ✨
+
+### Strapi Features
+These default features of Strapi can be used in conjunction with the Strapi Embeddings Plugin, empowering you to build secure and integrated applications with advanced embedding capabilities. Let me know if there's anything else I can assist you with! 🚀
+- [x] **🔒 Secure Authentication:** Utilize Strapi's user authentication and permission management system to control access to your content and protect sensitive information.
+- [x] **📦 API Integration:** Integrate Strapi with other systems and platforms using the extensive API capabilities provided. Seamlessly connect your content with your preferred tools and services.
+- [x] **📋 Typescript Types Generation:** Generate Typescript types for the chroma collections, enabling seamless integration and type safety in your code.
+
+These features are already available within Strapi itself. Let me know if there's anything else I can assist you with! 🚀
+### Plugin Features
+- [x] **🌐 Multilingual UI:** Enjoy a seamless multilingual experience with support for multiple languages in the user interface.
+- [x] **🔧 Easy Configuration:** Configure and manage multiple chroma instances effortlessly using the intuitive Strapi Content Manager.
+- [ ] **📚 Collection Management:** List, create, update, and delete chroma collections to organize your data effectively.
+- [ ] **✏️ Document Management:** List, create, update, and delete documents within chroma collections.
+- [ ] **🧩 Embedding Content-Type Integration:** Enhance your Strapi collections with the "Embedding" content-type 🌟, unlocking the power of embedding search capabilities on your data!
+- [ ] **⬆️ Document Import:** Easily import documents into Strapi and chroma. The plugin automatically splits the documents and generates embeddings for each section, making it easy to create embeddings without writing any code.
+- [ ] **💡 Prompt-based Embeddings:** Generate powerful embeddings for your Strapi documents using prompt templates. Shape the way your content is understood and processed by AI models.
+- [ ] **🔄 Automatic Embedding Synchronization:** The Strapi Embeddings Plugin automatically synchronizes the embeddings when data changes in Strapi. This ensures that your embeddings stay up to date and accurately reflect any modifications or updates made to your content.
+- [ ] **🔍 Semantic Search:** Leverage the power of semantic search to retrieve documents that closely match the meaning and context of your query, enabling you to find the most relevant information quickly.
+- [ ] **🎯 MaxDistance Queries:** Fine-tune your queries and retrieve only the documents that semantically match your query, even across multiple Chroma instances and collections.
+- [ ] **🚀 Simultaneous Queries across Instances & Collections:** Perform queries across multiple Chroma instances and collections simultaneously, unlocking the potential of your data.
+
+
+### Development 🛠️
 
 To develop and contribute to the Strapi Embeddings Plugin, follow these steps:
 
@@ -46,15 +60,15 @@ To develop and contribute to the Strapi Embeddings Plugin, follow these steps:
 For detailed installation instructions and more, please check the [Documentation](https://github.com/perzeuss/strapi-plugin-embeddings/blob/main/docs/).
 
 
-#### Contributing ❤️
+### Contributing ❤️
 
 We welcome and appreciate your contributions! To learn more about how you can get involved, please refer to our [Contribution Guidelines](https://github.com/perzeuss/strapi-plugin-embeddings/blob/main/CONTRIBUTING.md).
 
-#### License 📝
+### License 📝
 
 This plugin is licensed under the [MIT License](https://github.com/perzeuss/strapi-plugin-embeddings/blob/main/LICENSE). Feel free to use and modify the code to meet your requirements.
 
-#### Acknowledgements 🙏
+### Acknowledgements 🙏
 
 We would like to express our heartfelt gratitude to the developers and contributors of the Strapi CMS for providing an exceptional platform for building scalable and customizable applications.
 
