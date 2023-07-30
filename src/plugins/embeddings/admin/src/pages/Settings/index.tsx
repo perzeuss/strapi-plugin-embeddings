@@ -15,14 +15,16 @@ import {
   Flex,
   BaseHeaderLayout,
 } from "@strapi/design-system";
+import { useTranslate } from "../../utils/use-translate";
 
 const Settings = () => {
+  const { translate } = useTranslate();
   return (
     <Layout>
       <Box background="neutral100">
         <BaseHeaderLayout
-          title="Chroma DB Setup"
-          subtitle="Embeddings require a chroma database."
+          title={translate("settings.header.title")}
+          subtitle={translate("settings.header.subtitle")}
           as="h2"
         />
       </Box>
@@ -30,12 +32,17 @@ const Settings = () => {
         <Flex direction="column" alignItems="left">
           <Box paddingBottom={4}>
             <Typography>
-              The embeddings plugin stores embeddings in a{" "}
-              <Link href="https://trychroma.com" target="_blank">
-                chroma
-              </Link>{" "}
-              database. To start using embeddings, you need to configure at
-              least one chroma instance.
+              {translate("settings.text1", {
+                link: (
+                  <Link
+                    href="https://trychroma.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {translate("settings.text1.link.name")}
+                  </Link>
+                ),
+              })}
             </Typography>
           </Box>
           <Box paddingBottom={4}>
@@ -43,7 +50,7 @@ const Settings = () => {
               as={NavLink}
               to="/content-manager/collectionType/plugin::embeddings.chroma-db-connection?page=1&pageSize=10&sort=name:ASC"
             >
-              Configure a new chroma db instance
+              {translate("settings.button.add-instance.name")}
             </LinkButton>
           </Box>
           <Box>
@@ -51,7 +58,7 @@ const Settings = () => {
               as={NavLink}
               to="/content-manager/collectionType/plugin::embeddings.chroma-db-connection?page=1&pageSize=10&sort=name:ASC"
             >
-              List configured chroma db instances
+              {translate("settings.button.list-instances.name")}
             </LinkButton>
           </Box>
         </Flex>
