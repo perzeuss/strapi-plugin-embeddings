@@ -1,1 +1,8 @@
-{}
+{
+  "settings.header.title": "Chroma DB Einrichtung",
+  "settings.header.subtitle": "Embeddings benötigen eine Chroma Datenbank.",
+  "settings.text1": "Das Embeddings-Plugin speichert Embeddings in einer {link} Datenbank. Um mit Embeddings arbeiten zu können, muss mindestens eine Chroma-Datenbankinstanz konfiguriert worden sein.",
+  "settings.text1.link.name": "Chroma",
+  "settings.button.add-instance.name": "Chroma-Datenbankinstanz konfigurieren",
+  "settings.button.list-instances.name": "Chroma-Datenbankinstanzen auflisten"
+}

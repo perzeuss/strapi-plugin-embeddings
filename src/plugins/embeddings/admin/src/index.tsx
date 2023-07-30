@@ -1,14 +1,44 @@
-import { prefixPluginTranslations } from '@strapi/helper-plugin';
+import { prefixPluginTranslations } from "@strapi/helper-plugin";
 
-import pluginPkg from '../../package.json';
-import pluginId from './pluginId';
-import Initializer from './components/Initializer';
-import PluginIcon from './components/PluginIcon';
-
+import pluginPkg from "../../package.json";
+import pluginId from "./pluginId";
+import Initializer from "./components/Initializer";
+import PluginIcon from "./components/PluginIcon";
+import getTrad from "./utils/getTrad";
 const name = pluginPkg.strapi.name;
 
 export default {
   register(app: any) {
+    // Create the plugin's settings section
+    app.createSettingSection(
+      // created section
+      {
+        id: pluginId,
+        intlLabel: {
+          id: getTrad("Settings.section-label"),
+          defaultMessage: "Embeddings",
+        },
+      },
+      // links
+      [
+        {
+          intlLabel: {
+            id: "settings.page",
+            defaultMessage: "Chroma DB",
+          },
+          id: "settings",
+          to: `/settings/embeddings/chroma`,
+          Component: async () => {
+            const component = await import(
+              /* webpackChunkName: "embeddings-settings-page" */ "./pages/Settings"
+            );
+
+            return component;
+          },
+          permissions: [],
+        },
+      ]
+    );
     app.addMenuLink({
       to: `/plugins/${pluginId}`,
       icon: PluginIcon,
@@ -17,7 +47,9 @@ export default {
         defaultMessage: name,
       },
       Component: async () => {
-        const component = await import(/* webpackChunkName: "[request]" */ './pages/App');
+        const component = await import(
+          /* webpackChunkName: "[request]" */ "./pages/App"
+        );
 
         return component;
       },

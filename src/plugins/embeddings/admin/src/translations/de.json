@@ -1,0 +1,9 @@
+{
+    "settings.header.title": "Chroma DB Setup",
+    "settings.header.subtitle": "Embeddings require a chroma database.",
+    "settings.text1": "The embeddings plugin stores embeddings in a {link} database. To start using embeddings, you need to configure at least one chroma instance.",
+    "settings.text1.link.name": "chroma",
+    "settings.button.add-instance.name": "Configure a new chroma db instance",
+    "settings.button.list-instances.name": "List configured chroma db instances"
+  }
+  
