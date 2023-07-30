@@ -1,57 +1,63 @@
-# 🚀 Getting started with Strapi
+### Strapi Embeddings Plugin 🚀
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
+[![GitHub](https://img.shields.io/github/license/perzeuss/strapi-plugin-embeddings)](https://github.com/perzeuss/strapi-plugin-embeddings/blob/main/LICENSE)  [![GitHub stars](https://img.shields.io/github/stars/perzeuss/strapi-plugin-embeddings)](https://github.com/perzeuss/strapi-plugin-embeddings/stargazers)
 
-### `develop`
+Welcome to the Strapi Embeddings Plugin! ✨ Enhance your Strapi CMS with the power of embeddings for an exceptional content management experience. This plugin introduces new content types that can be easily configured and managed via the Strapi Content Manager, allowing you to take control of your collections, documents, and embeddings directly within Strapi.
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
+#### Features ✨
 
-```
-npm run develop
-# or
-yarn develop
-```
+- 🔧 Easy Configuration: Configure and manage multiple chroma instances effortlessly using the intuitive Strapi Content Manager.
+- 📚 Collection Management: List, create, update, and delete chroma collections to organize your data effectively. 
+- ✏️ Document Management: List, create, update, and delete documents within chroma collections.
+- 🌐 Multilingual UI: Enjoy a seamless multilingual experience with support for multiple languages in the user interface.
+- 🔩 Schema Customization: Tailor object metadata schemas according to your specific requirements. Define custom fields and their data types to store the information that matters to you.
+- 📋 Typescript Types Generation: Generate Typescript types for the chroma collections, enabling seamless integration and type safety in your code.
+- ⬆️ Document Import: Easily import documents into strapi and chroma. The plugin automatically splits the documents and generates embeddings for each section, making it easy to create embeddings without a single line of code.
+- 💡 Prompt-based Embeddings: Generate powerful embeddings for your Strapi documents using prompt templates. Shape the way your content is understood and processed by AI models.
+- 🔄 Automatic Embedding Synchronization: The Strapi Embeddings Plugin automatically synchronizes the embeddings when data changes in Strapi. This ensures that your embeddings stay up to date and accurately reflect any modifications or updates made to your content
+- 🔍 Semantic Search: Leverage the power of semantic search to retrieve documents that closely match the meaning and context of your query, enabling you to find the most relevant information quickly.
+- 🚀 Simultaneous Queries across Instances & Collections: Perform queries across multiple Chroma instances and collections simultaneously, unlocking the potential of your data.
+- 🧩 MaxDistance Queries: Fine-tune your queries and retrieve only the documents that semantically match your query, even across multiple Chroma instances and collections.
+- 🔒 Secure Authentication: Utilize Strapi's user authentication and permission management system to control access to your content and protect sensitive information.
+- 📦 API Integration: Integrate the plugin with other systems and platforms using the extensive API capabilities provided by Strapi. Seamlessly connect your content with your preferred tools and services.
 
-### `start`
+#### Development 🛠️
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
+To develop and contribute to the Strapi Embeddings Plugin, follow these steps:
 
-```
-npm run start
-# or
-yarn start
-```
+1. Clone the repository:
+   ```shell
+   git clone https://github.com/perzeuss/strapi-plugin-embeddings.git
+   ```
 
-### `build`
+2. Install dependencies:
+   ```shell
+   cd strapi-plugin-embeddings
+   yarn install
+   ```
 
-Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
+3. Run Strapi in development mode and watch admin changes:
+   ```shell
+   yarn strapi develop --watch-admin
+   ```
 
-```
-npm run build
-# or
-yarn build
-```
+4. Start working on the plugin and make your desired changes.
 
-## ⚙️ Deployment
+For detailed installation instructions and more, please check the [Documentation](https://github.com/perzeuss/strapi-plugin-embeddings/blob/main/docs/).
 
-Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
 
-## 📚 Learn more
+#### Contributing ❤️
 
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
+We welcome and appreciate your contributions! To learn more about how you can get involved, please refer to our [Contribution Guidelines](https://github.com/perzeuss/strapi-plugin-embeddings/blob/main/CONTRIBUTING.md).
 
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
+#### License 📝
 
-## ✨ Community
+This plugin is licensed under the [MIT License](https://github.com/perzeuss/strapi-plugin-embeddings/blob/main/LICENSE). Feel free to use and modify the code to meet your requirements.
 
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+#### Acknowledgements 🙏
 
----
+We would like to express our heartfelt gratitude to the developers and contributors of the Strapi CMS for providing an exceptional platform for building scalable and customizable applications.
 
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+If you encounter any issues or have any questions, please create an issue on our GitHub repository. We appreciate your feedback!
+
+Happy content management with Strapi Embeddings Plugin! 🎉
